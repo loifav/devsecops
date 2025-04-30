@@ -42,7 +42,6 @@ jobs:
 
       - name: Build Docker Image
         run: docker build -f Dockerfile -t myapp:latest .
-        continue-on-error: true
 
       - name: Docker Scout Scan
         run: |
